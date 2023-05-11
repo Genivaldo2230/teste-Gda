@@ -13,11 +13,10 @@ public class CreateVideosServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req,HttpServletResponse resp) throws ServletException, IOException {
 
-        String videoId = req.getParameter("video-id");
 
-//        int videoId = Integer.parseInt(req.getParameter("video-card"));
+        String videoId = req.getParameter("video-id-input");
         String videoTitle = req.getParameter("video-title");
-        String videoDescription  =req.getParameter("video-description");
+        String videoDescription = req.getParameter("video-description");
         String videoUrl = req.getParameter("video-url");
 
 

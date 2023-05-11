@@ -5,7 +5,6 @@
 <body>
 
 <div class="link-bar">
-
   <div class="search-container">
     <form action="https://www.youtube.com/results" method="get" target="_blank">
       <input name="search_query" placeholder="Pesquisar no YouTube" type="text" _mstplaceholder="381641" _msthash="1">
@@ -15,10 +14,13 @@
 
   <div class="container-video">
     <div class="add-video-form">
+      <form action="/creater-video" method="post">
       <label for="video-id-input" _msttexthash="302237" _msthash="3">Adicionar vídeo:</label>
-      <input id="video-id-input" placeholder="Insira o ID do vídeo do YouTube" type="text" _mstplaceholder="664378" _msthash="4">
+
+      <input id="video-id-input" name="video-id-input" placeholder="Insira o ID do vídeo do YouTube" type="text" _mstplaceholder="664378" _msthash="4">
       <button id="add-video-btn" _msttexthash="132275" _msthash="5">Adicionar</button>
       <button id="remove-video-btn" _msttexthash="228007" _msthash="6">Remover Vídeo</button>
+      </form>
     </div>
   </div>
 </div>
